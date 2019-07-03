@@ -1,0 +1,31 @@
+delete from patient_encounters where patient_header_id in (select patient_header_id from patient_headers where file_name='Distrib_PE3_MinRequiredData_reprocess.txt')
+delete  from  patient_headers where file_name='Distrib_PE3_MinRequiredData_reprocess.txt'
+delete from file_states where name='Distrib_PE3_MinRequiredData_reprocess.txt'
+
+delete from patient_encounters where patient_header_id in (select patient_header_id from patient_headers where file_name='DistLkp_PE_BR23_001_ClientCode_reprocess.txt')
+delete  from  patient_headers where file_name='DistLkp_PE_BR23_001_ClientCode_reprocess.txt'
+delete from file_states where name='DistLkp_PE_BR23_001_ClientCode_reprocess.txt'
+
+delete from patient_encounters where patient_header_id in (select patient_header_id from patient_headers where file_name='DistLkp_PE_BR23_002_ClientCode_reprocess.txt')
+delete  from  patient_headers where file_name='DistLkp_PE_BR23_002_ClientCode_reprocess.txt'
+delete from file_states where name='DistLkp_PE_BR23_002_ClientCode_reprocess.txt'
+
+delete from patient_encounters where patient_header_id in (select patient_header_id from patient_headers where file_name like '%DistLkp_PE_BR23_003_ClientCode_reprocess.txt%')
+delete  from  patient_headers where file_name like '%DistLkp_PE_BR23_003_ClientCode_reprocess.txt%'
+delete from file_states where name like '%DistLkp_PE_BR23_003_ClientCode_reprocess.txt%'
+
+delete from patient_encounters where patient_header_id in (select patient_header_id from patient_headers where file_name like '%DistLkp_PE_BR23_002_ClientCode_reprocess.txt%')
+delete  from  patient_headers where file_name like '%DistLkp_PE_BR23_002_ClientCode_reprocess.txt%'
+delete from file_states where name like '%DistLkp_PE_BR23_002_ClientCode_reprocess.txt%'
+
+delete from patient_encounters where patient_header_id in (select patient_header_id from patient_headers where file_name like '%DistLkp_PE_BR23_001_ClientCode_reprocess.txt%')
+delete  from  patient_headers where file_name like '%DistLkp_PE_BR23_001_ClientCode_reprocess.txt%'
+delete from file_states where name like '%DistLkp_PE_BR23_001_ClientCode_reprocess.txt%'
+
+delete from patient_encounters where patient_header_id in (select patient_header_id from patient_headers where file_name like '%DistLkp_PE_BR23_001_ClientCode_reprocess.txt%')
+delete  from  patient_headers where file_name like '%DistLkp_PE_BR23_001_ClientCode_reprocess.txt%'
+delete from file_states where name like '%DistLkp_PE_BR23_001_ClientCode_reprocess.txt%'
+
+delete from patient_encounters where patient_header_id in (select patient_header_id from patient_headers where file_name like '%DistLkp_PE_BR17_001_%')
+delete  from  patient_headers where file_name like '%DistLkp_PE_BR17_001_%'
+delete from file_states where name like '%DistLkp_PE_BR17_001_%'
