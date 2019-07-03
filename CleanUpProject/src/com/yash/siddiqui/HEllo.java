@@ -7,7 +7,9 @@ import com.jcraft.jsch.Session;
 public class HEllo {
 	
 public static void main(String[] args) {
-	 try {
+	System.out.println("Start");
+	
+	try {
 		  String user ="cumulus.connect"; // username for remote host
 		  String password ="4L5d0z3cFpXcU-lX"; // password of the remote host
 
