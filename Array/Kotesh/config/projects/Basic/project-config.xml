@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="007ea673-7244-4b9e-9e21-a503640ecaee" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
+  <name>Basic</name>
+  <parameters />
+  <cleanup />
+</project>
+

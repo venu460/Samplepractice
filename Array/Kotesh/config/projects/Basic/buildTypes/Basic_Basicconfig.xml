@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="f43abfc2-8190-4211-8915-246db75ab5a1" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
+  <name>Basicconfig</name>
+  <description />
+  <settings>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_1" name="step1" type="Maven2">
+        <parameters>
+          <param name="goals" value="test" />
+          <param name="maven.path" value="%teamcity.tool.maven.DEFAULT%" />
+          <param name="pomLocation" value="D:\eclipse\JavaPractice\Kotesh\pom.xml" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="userSettingsSelection" value="userSettingsSelection:default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
